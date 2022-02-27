@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+li {
+	list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clock-widget {
+	width: 470px;
+	margin: 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-field {
+	width: 30%;
+}
+
+.form-input, .add-btn {
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid black;
+	outline: none;
+}
+
+.clock-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.clock {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.clock-item {
+	width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clock-item:not(:nth-child(3n)) {
+	margin-right: 15px;
+}
+
+.clock-name {
+  margin-bottom: 0;
+}
+
+.clock-value {
+	width: 50%;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.delete-btn {
+	text-align: end;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #fff;
+	border: none;
 }
